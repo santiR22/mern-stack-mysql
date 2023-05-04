@@ -1,0 +1,8 @@
+-- table tasks
+CREATE TABLE tasks (
+    id INTEGER NOT NULL PRIMARY KEY,
+    title VARCHAR(200), 
+    description VARCHAR(300),
+    done BOOLEAN NOT NULL DEFAULT 0,
+    createAt TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
